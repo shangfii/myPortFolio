@@ -7,11 +7,10 @@ font-family: Arial, Helvetica, sans-serif;}
 
 /* Setting body background color */
 body{
-    Background:#BD9391;
+    Background:#f7f2f2;
  ;    display: flex;
  flex-direction: column;}
  
-
  
 /* Nav bar */
 nav {
@@ -168,6 +167,13 @@ border: solid 3px #ADBABD;
 
 
 /* Media Queries */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
 
 /* Screens with a max width of 1200px, laptops */
 @media screen and (max-width:1200px)
