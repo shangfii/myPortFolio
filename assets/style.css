@@ -1,33 +1,32 @@
 /* Setting default styles for all elements */
-*
-{box-sizing: border-box
-    ;margin: 0;
-padding:0;
-font-family: Arial, Helvetica, sans-serif;}
+
+*{
+    box-sizing: border-bo;
+    margin: 0;
+    padding:0;
+   font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Setting body background color */
 body{
-    Background:#f7f2f2;
- ;    display: flex;
- flex-direction: column;
+    Background:#f1ebeb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
- .celsius{
-     color: red;
- }
  
 /* Nav bar */
 nav {
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     background:#ADBABD;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 150px;
     margin: 0px auto;
     position: relative;
-    }
+}
 
 /* Aligning the nav bar header  */
 nav h1{
@@ -35,47 +34,63 @@ nav h1{
     font-size: 25px;
 }
 
+/* change the word Celsius to red to form some kind of logo*/
+
+.celsius{
+    color: red;
+}
+
 /* Aligning the content in the nav bar */
+
 .nav-list {
-    display: flex;
-justify-content: flex-end;
-align-items: center;
-padding: 10px;
-height: 100px;}
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding: 10px;
+ height: 100px;
+ flex-wrap: wrap;
+}
 
 /* removing the list style */
+
 .nav-item{
     list-style: none;
-    padding: 10px;}
-
+    padding: 10px;
+}
 
 /* Changing the nav link style */
-.nav-item a
-{text-decoration: none;
-color: black;}
 
-section
-{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;}
+.nav-item a{
+ text-decoration: none;
+ color: black;
+}
+
+section{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
 
 /* This controls the space between the h2 and the border line */
+
 .flex-container{
-    flex-basis: 55%;}
+    flex-basis: 55%;
+}
 
-    .flex-container2{
-        flex-basis: 55%;}
-
-        
+.flex-container2{
+    flex-basis: 55%;
+}
 
 /* Sizing and aligning the image of me in the snow */
+
 .imgsize{
     width: 30%;
     margin: 11% 7% -18% -31%;
 }
 
 /* Styling the paragraph */
+
 p {
     line-height: 2;
     padding: 50px;
@@ -83,35 +98,34 @@ p {
 }
 
 /* Choosing our work image size, and opacity. Then adding a hover feature*/
-.seo
-{width: 950px;
+
+.seo{
+    width: 30%;
     opacity: 1;
     filter: alpha(opacity=100);
     margin: 18% 22% 22% -14%;
 }
 
 
-.seo:hover
-{
-  opacity: 0.3;
+.seo:hover{
+  opacity: 0.5;
   filter: alpha(opacity=30);
 
 }
-
-.skyblue
-{width: 800px;
+.skyblue{
+    width: 30%;
     opacity: 1;
     filter: alpha(opacity=100);
     margin: 18% 22% 22% -14%;
 }
 
-.skyblue:hover
-{
-  opacity: 0.3;
+.skyblue:hover{
+  opacity: 0.9;
   filter: alpha(opacity=30);
 }
 
-.redshade{width: 800px;
+.redshade{
+    width: 30%;
     opacity: 1;
     filter: alpha(opacity=100);
     margin: 18% 22% 22% -14%;
@@ -119,18 +133,17 @@ p {
 
 .redshade:hover
 {
-  opacity: 0.3;
+  opacity: 0.9;
   filter: alpha(opacity=30);
 
 }
 
-
-
-.ok
-{display: flex;
-flex-wrap: wrap;
-justify-content:space-between;
-margin: -10px;}
+.ok{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: -10px;
+}
 
 section
 {display: flex;
@@ -140,222 +153,191 @@ justify-content: space-between;}
 
 
 /* About me header */
-section> h2 {
+section h2{
     flex-basis: 20%;
     border-right: black 4px solid;
     margin: 42px 6px -8px 32px;
 }
 
 
-.flex-right{display: flex;
+.flex-right{
+    display: flex;
     align-items: row;
-margin:100px;}
+    margin:100px;
+}
 
 a{
     text-decoration: inherit;
 }
+
 .flex-right.butt{
-border: solid 3px #ADBABD;
+    border: solid 3px #ADBABD;
     border-radius: 72px;
     padding: 11px 33px;
     background-color: cadetblue;
-    color: whitesmoke;}
+    color: whitesmoke;
+    flex-wrap: wrap;
+}
 
-    /* padding: 10px 80px; */
+/* padding: 10px 80px; */
 
-
-
-
-
-
-
-
-/* Media Queries */
 
 footer {
-  padding: 20px;
+  padding: 100px;
   text-align: center;
   background: #13293d;
   color: #fff;
 }
 
+
+/* Media Queries */
+
 /* Screens with a max width of 1200px, laptops */
-@media screen and (max-width:1200px)
-    {.imgsize{
-        width: 48%;
+
+@media screen and (max-width:992px){
+    .imgsize{
+        width: 50%;
         margin: 4% 10% 20% 24%;
-    } section
-    {display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;}
+       
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     
-    section> h2 {
+    section .h2 {
         flex-basis: 10%;
-        border-bottom: black 4px solid;
+        border-bottom: black 40px solid;
         border-right: none;
-        margin: 40px;}
+        margin: 40px;
+    }
     
-        .seo{
-            width: 750px;
-           opacity: 1;
-           filter: alpha(opacity=100);
-           margin: 13% 25% 4% 9%;}
-       
-       .skyblue{
-           width: 600px;
-           opacity: 1;
-           filter: alpha(opacity=100);
-           margin: 13% 25% 4% 9%;}
-       
-       
-       .redshade {
-           width: 600px;
-           opacity: 1;
-           filter: alpha(opacity=100);
-           margin: 13% 25% 4% 9%;}
+    .seo{
+        width: 50%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        margin: 13% 25% 4% 9%;
+    }
+
+    .flex-right{
+        display: flex;
+        align-items: row;
+        margin:100px;}
        
        
-       
-        .flex-right{display: flex;
-           align-items: row;
-       margin:100px;}
-       
-       
-       .flex-right.butt{
-       border: solid 3px #ADBABD;
-           border-radius: 72px;
-           padding: 15px 108px;
-           background-color: cadetblue;
-           color: whitesmoke;
-           margin: 24px;}}
+    .flex-right.butt{
+        border: solid 3px #ADBABD;
+        border-radius: 72px;
+        padding: 15px 108px;
+        background-color: cadetblue;
+        color: whitesmoke;
+        margin: 24px;
+    }
+}
     
-
-
-
 
 
 /* Screens with a max width of 768px, tablets */
 
-@media screen and (max-width:768px)
-{.imgsize{
-    width: 48%;
-    margin: 4% 10% 20% 24%;
-} section
-{display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: space-between;}
+@media screen and (max-width:768px){
+    .imgsize{
+         width: 70%;
+          margin: 4% 10% 20% 24%;
+        }
 
-section> h2 {
-    flex-basis: 10%;
-    border-bottom: black 4px solid;
-    border-right: none;
-    margin: 40px;}
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    section h2 {
+        flex-basis: 10%;
+        border-bottom: black 4px solid;
+        border-right: none;
+        margin: 40px;
+    }
 
     .seo{
-        width: 700px;
-       opacity: 1;
-       filter: alpha(opacity=100);
-       margin: 13% 25% 4% 9%;}
-   
-   .skyblue{
-       width: 600px;
-       opacity: 1;
-       filter: alpha(opacity=100);
-       margin: 13% 25% 4% 9%;}
-   
-   
-   .redshade {
-       width: 600px;
-       opacity: 1;
-       filter: alpha(opacity=100);
-       margin: 13% 25% 4% 9%;}
-   
-   
-   
-    .flex-right{display: flex;
-       align-items: row;
-   margin:100px;}
-   
+        width: 70%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        margin: 13% 25% 4% 9%;
+    }
+    .flex-right{
+        display: flex;
+        align-items: row;
+        margin:100px;
+    }
    
    .flex-right.butt{
-   border: solid 3px #ADBABD;
+       border: solid 3px #0d0d0e;
        border-radius: 72px;
        padding: 15px 108px;
-       background-color: cadetblue;
+       background-color: rgb(3, 238, 247);
        color: whitesmoke;
-       margin: 24px;}}
-
-
-    
-
+       margin: 24px;
+   }
+}
 
 
 /* Screens with a max width of 480px, typically mobile phones*/
 
-@media screen and (max-width:480px)
-{.imgsize{
-    width: 51%;
-    margin: 3% 19% 13% 15%;} 
-
-p {
-    line-height: 2;
-    padding: 45px;
-    margin: -17% -5% 3% 2%;
-}
-
-body {display: flex;
-    display: flex;
-    flex-direction: inherit;
+@media screen and (max-width:480px){
     
-}
+    .imgsize{
+        width: 100%;
+        margin: 3% 19% 13% 15%;
+    } 
+
+    p {
+        line-height: 2;
+        padding: 45px;
+        margin: -17% -5% 3% 2%
+    }
+
+    body {
+        display: flex;
+        flex-direction: inherit;
+    }
 
 
-section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;}
+    section{
+        display: flex;
+        flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-between;
+        }
 
-section> h2{
-    flex-basis: 10%;
-    border-bottom: black 4px solid; 
-    border-right: none;
-    margin: 40px;}
+    section .h2{
+        flex-basis: 10%;
+        border-bottom: black 4px solid; 
+        border-right: none;
+        margin: 40px;
+    }
     
 
-.seo{
-     width: 400px;
-    opacity: 1;
-    filter: alpha(opacity=100);
-    margin: 13% 25% 4% 9%;}
+    .seo{
+        width: 100%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        margin: 13% 25% 4% 9%;
+    }
 
-.skyblue{
-    width: 350px;
-    opacity: 1;
-    filter: alpha(opacity=100);
-    margin: 13% 25% 4% 9%;}
-
-
-.redshade {
-    width: 350px;
-    opacity: 1;
-    filter: alpha(opacity=100);
-    margin: 13% 25% 4% 9%;}
-
-
-
- .flex-right{display: flex;
-    align-items: row;
-margin:100px;}
-
-
-.flex-right.butt{
-border: solid 3px #ADBABD;
-    border-radius: 72px;
-    padding: 15px 108px;
-    background-color: cadetblue;
-    color: whitesmoke;
-    margin: 24px;}}
+    .flex-right{
+        display: flex;
+        align-items: row;
+        margin:100px;
+    }
+    .flex-right.butt{
+        border: solid 3px #ADBABD;
+        border-radius: 72px;
+        padding: 15px 108px;
+        background-color: cadetblue;
+        color: whitesmoke;
+        margin: 24px;
+    }
+}
